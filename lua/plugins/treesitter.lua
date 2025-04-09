@@ -7,6 +7,11 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
+      "eex",
+      "elixir",
+      "erlang",
+      "heex",
+      "html",
       "lua",
       "vim",
       -- add more arguments for adding more treesitter parsers
