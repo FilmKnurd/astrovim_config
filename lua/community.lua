@@ -11,5 +11,6 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.colorscheme.everforest" },
+  { import = "astrocommunity.snippet.nvim-snippets" },
   -- import/override with your plugins folder
 }
