@@ -15,6 +15,10 @@ return {
     --   max_tokens = 4096,
     --   -- reasoning_effort = "high" -- only supported for reasoning models (o1, etc.)
     -- },
+    provider = "claude",
+    claude = {
+      api_key_name = { "op", "read", "op://Private/Anthropic API Key/credential" },
+    },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
@@ -50,7 +54,7 @@ return {
     },
     {
       -- Make sure to set this up properly if you have lazy=true
-      'MeanderingProgrammer/render-markdown.nvim',
+      "MeanderingProgrammer/render-markdown.nvim",
       opts = {
         file_types = { "markdown", "Avante" },
       },
